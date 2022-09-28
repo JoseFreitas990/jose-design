@@ -1,0 +1,11 @@
+.back-container {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: 6;
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+}

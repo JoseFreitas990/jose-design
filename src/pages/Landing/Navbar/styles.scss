@@ -1,0 +1,16 @@
+.navbar-section {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+
+  .navbar-text {
+    transform: translateY(-100px);
+    color: rgb(206, 54, 54);
+    margin: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
