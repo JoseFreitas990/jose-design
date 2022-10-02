@@ -1,5 +1,5 @@
 .ideas-section {
-  background-color: white;
+  background-color: var(--bgColor);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -69,6 +69,7 @@
           outline: 0;
           border: none;
           text-decoration: none;
+          cursor: pointer;
         }
       }
     }

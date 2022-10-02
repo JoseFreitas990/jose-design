@@ -1,5 +1,6 @@
 import Ideas from "./Ideas";
 import Landing from "./Landing";
 import Forest from "./Forest";
-import Matryoshka from "./Matryoshka";
-export { Landing, Ideas, Forest, Matryoshka };
+import Console from "./Console";
+import Random from "./Random";
+export { Landing, Ideas, Forest, Console, Random };

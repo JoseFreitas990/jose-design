@@ -13,7 +13,8 @@ const Ideas = () => {
     { title: "Forest", to: "/forest" },
     { title: "Parallax", to: "/parallax" },
     { title: "People", to: "/people" },
-    { title: "Matryoshka", to: "/doll" },
+    { title: "Console", to: "/console" },
+    { title: "Random", to: "/random" },
   ];
 
   useEffect(() => {

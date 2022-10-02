@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Forest, Ideas, Landing, Matryoshka } from "./pages";
+import { Console, Forest, Ideas, Landing, Random } from "./pages";
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
         <Route path='/' element={<Landing />} />
         <Route path='/ideas' element={<Ideas />} />
         <Route path='/forest' element={<Forest />} />
-        <Route path='/doll' element={<Matryoshka />} />
+        <Route path='/console' element={<Console />} />
+        <Route path='/random' element={<Random />} />
       </Routes>
     </Router>
   );

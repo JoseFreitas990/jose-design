@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+  flex-direction: column;
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    flex-direction: column;
+
+    h1 {
+      color: white;
+      font-size: calc(100vw / 7);
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .first {
+    background-image: url("https://images6.alphacoders.com/549/549695.jpg");
+  }
+  .second {
+    background-image: url("https://wallpapercave.com/wp/wp5075260.jpg");
+  }
+  .third {
+    background-image: url("https://rare-gallery.com/mocahbig/414437-Xbox-Serie-X-Xbox-controller-dark.jpg");
+  }
+  .fourth {
+    background-image: url("https://wallpaperaccess.com/download/nintendo-switch-console-750027");
+  }
+  .fifth {
+    background-image: url("https://wallpapercave.com/wp/wp2313434.jpg");
+  }
+}
