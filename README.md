@@ -4,7 +4,7 @@ This always-in-development project was meant to try out animations and save them
 
 ## See it for yourself
 
-You can check the demo in the following [link](https://github.com/facebook/create-react-app).
+You can check the demo in the following [link](https://jose-designs.netlify.app/).
 
 ## Everything isn't perfect
 
