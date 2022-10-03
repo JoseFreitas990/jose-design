@@ -3,12 +3,9 @@ import "./styles.scss";
 import { Back, Slider } from "../../components";
 import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import CSSRulePlugin from "gsap/CSSRulePlugin";
 
 const Random = () => {
   gsap.registerPlugin(ScrollTrigger);
-
-  let tl = gsap.timeline();
 
   const scrollTrigerParallaxImages = {
     trigger: ".random-landing",
