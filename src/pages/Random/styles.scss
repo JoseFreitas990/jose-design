@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@100;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
+
 .random-landing {
   background-color: #f5f0ec;
   height: 100vh;
@@ -28,6 +34,11 @@
 
     align-items: center;
     padding-left: 3rem;
+    font-family: "Bodoni Moda", sans-serif;
+
+    .text-container {
+      font-size: calc(3vw + 1rem);
+    }
 
     &::after {
       content: "";

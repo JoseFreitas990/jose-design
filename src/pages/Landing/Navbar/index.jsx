@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect } from "react";
 import "./styles.scss";
-const Navbar = () => {
+const Navbar = ({ onClick }) => {
   let tl = gsap.timeline();
 
   useEffect(() => {
@@ -10,9 +10,17 @@ const Navbar = () => {
 
   return (
     <section className='navbar-section'>
-      <span className='navbar-text'>me.</span>
-      <span className='navbar-text'>ideas.</span>
-      <span className='navbar-text'>contact.</span>
+      <a
+        className='navbar-text'
+        href='https://www.linkedin.com/in/jos%C3%A9-bernardo-freitas-8a8b761b7/'
+        target='_blank'
+      >
+        me.
+      </a>
+      <a className='navbar-text' onClick={onClick}>
+        ideas.
+      </a>
+      <a className='navbar-text'>contact.</a>
     </section>
   );
 };

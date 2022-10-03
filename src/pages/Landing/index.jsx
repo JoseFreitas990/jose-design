@@ -4,6 +4,7 @@ import "./styles.scss";
 import { gsap } from "gsap";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
+import ParticlesEffect from "../../components/ParticlesEffect";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -61,34 +62,40 @@ const Landing = () => {
   };
 
   return (
-    <section className='landing-section'>
-      <Navbar />
+    <>
       <div id='Wrap' className='cursor' />
-      <div className='left-container'>
-        <div className='text-container'>
-          <h1 className='header-text'>Make something</h1>
+      <Navbar onClick={goToIdeaPage} />
+      <section className='landing-section'>
+        <ParticlesEffect />
+        <div className='left-container'>
+          <div className='text-container'>
+            <h1 className='header-text'>Make</h1>
+          </div>
+          <div className='text-container'>
+            <h1 className='header-text'>something</h1>
+          </div>
+          <div className='text-container'>
+            <h1 className='header-text'>new.</h1>
+          </div>
+          <div className='button-container'>
+            <div className='line' />
+            <span className='line-button' onClick={goToIdeaPage}>
+              keep it simple
+            </span>
+          </div>
+          <div className='moto-section'>
+            <span className='moto-text'>Imagine</span>
+            <span className='moto-text'>Sketch</span>
+            <span className='moto-text'>Develop</span>
+          </div>
         </div>
-        <div className='text-container'>
-          <h1 className='header-text'>new.</h1>
-        </div>
-        <div className='button-container'>
-          <div className='line' />
-          <span className='line-button' onClick={goToIdeaPage}>
-            keep it simple
+        <div className='ideas-container'>
+          <span className='test' onClick={goToIdeaPage}>
+            ideas
           </span>
         </div>
-        <div className='moto-section'>
-          <span className='moto-text'>Imagine</span>
-          <span className='moto-text'>Sketch</span>
-          <span className='moto-text'>Develop</span>
-        </div>
-      </div>
-      <div className='ideas-container'>
-        <span className='test' onClick={goToIdeaPage}>
-          ideas
-        </span>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

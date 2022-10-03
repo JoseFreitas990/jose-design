@@ -1,0 +1,46 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.horizontal {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .slider {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: calc(2vw + 2rem);
+    text-transform: uppercase;
+    align-items: center;
+
+    .slider-img-container {
+      height: 90%;
+      width: 15rem;
+      margin-inline-end: 1.5rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .left {
+    transform: translateX(-20vw);
+
+    :first-of-type {
+      transform: translateX(-30vw);
+    }
+  }
+
+  .right {
+    transform: translateX(40vw);
+  }
+}

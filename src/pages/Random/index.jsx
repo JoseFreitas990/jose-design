@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./styles.scss";
-import { Back } from "../../components";
+import { Back, Slider } from "../../components";
 import gsap, { Power3 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
@@ -21,7 +21,6 @@ const Random = () => {
 
   const exploreImageScroll = {
     trigger: ".random-landing",
-
     start: "center end",
 
     scrub: true,
@@ -104,13 +103,13 @@ const Random = () => {
       <section className='random-landing'>
         <div className='left-container'>
           <div className='text-container'>
-            <span className='header-text'>
-              Random images are beautiful images
-            </span>
+            <h2 className='header-text'>Random images</h2>
+            <h2 className='header-text'>to brighten up</h2>
+            <h2 className='header-text'>your day.</h2>
           </div>
           <div className='img-box above'>
             <img
-              loading='lazy'
+              loading='eager'
               alt='above'
               src={`https://source.unsplash.com/random/1920x1080?sig=${
                 Math.random() * 20
@@ -121,6 +120,7 @@ const Random = () => {
         <div className='right-container'>
           <div className='img-box under'>
             <img
+              loading='lazy'
               alt='under'
               src={`https://source.unsplash.com/random/1920x1080?sig=${
                 Math.random() * 20
@@ -159,6 +159,7 @@ const Random = () => {
           </div>
         </div>
       </section>
+      <Slider />
       <section className='parallel-section'></section>
     </>
   );

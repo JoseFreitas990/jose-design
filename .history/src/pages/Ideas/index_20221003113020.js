@@ -10,10 +10,11 @@ const Ideas = () => {
   var tl = gsap.timeline();
 
   const text = [
-    { title: "Random", to: "/random" },
     { title: "Forest", to: "/forest" },
+    { title: "Parallax", to: "/parallax" },
     { title: "People", to: "/people" },
     { title: "Console", to: "/console" },
+    { title: "Random", to: "/random" },
   ];
 
   useEffect(() => {
